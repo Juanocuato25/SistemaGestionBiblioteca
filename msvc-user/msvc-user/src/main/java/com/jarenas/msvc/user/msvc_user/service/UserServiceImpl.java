@@ -6,6 +6,7 @@ import com.jarenas.msvc.user.msvc_user.exceptions.UserExceptions;
 import com.jarenas.msvc.user.msvc_user.mapper.UserMapper;
 import com.jarenas.msvc.user.msvc_user.model.entity.User;
 import com.jarenas.msvc.user.msvc_user.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,16 +18,10 @@ import java.util.stream.Collectors;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository uRepository;
-    private final UserDTO userDTO;
+    @Autowired
+    UserRepository uRepository;
 
     private final UserMapper userMapper = UserMapper.INSTANCE;
-
-    public UserServiceImpl(UserRepository uRepository, UserDTO userDTO) {
-        this.uRepository = uRepository;
-        this.userDTO = userDTO;
-    }
-
 
     @Override
     @Transactional(readOnly = true)

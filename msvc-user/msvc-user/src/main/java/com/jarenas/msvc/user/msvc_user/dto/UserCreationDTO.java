@@ -16,8 +16,8 @@ public class UserCreationDTO {
     @Email(message = "Email should be valid")
     private String email;
 
-    @NotBlank(message = "Addres is mandatory")
-    private String addres;
+    @NotBlank(message = "Address is mandatory")
+    private String address;
 
     @NotBlank(message = "Phone number is mandatory")
     private String phoneNumber;
@@ -46,12 +46,12 @@ public class UserCreationDTO {
         this.email = email;
     }
 
-    public @NotBlank(message = "Addres is mandatory") String getAddres() {
-        return addres;
+    public @NotBlank(message = "Addres is mandatory") String getAddress() {
+        return address;
     }
 
-    public void setAddres(@NotBlank(message = "Addres is mandatory") String addres) {
-        this.addres = addres;
+    public void setAddres(@NotBlank(message = "Addres is mandatory") String address) {
+        this.address = address;
     }
 
     public @NotBlank(message = "Phone number is mandatory") String getPhoneNumber() {

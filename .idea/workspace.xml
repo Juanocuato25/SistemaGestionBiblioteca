@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="add package controller and UserController class with 2 GetMethods to get list and user by id">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/dto/UserCreationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -37,12 +41,39 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.MsvcUserApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/juanc/OneDrive/Escritorio/Microservicios/SistemaGestionBiblioteca"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jarenas.msvc.user.msvc_user.exceptions" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MsvcUserApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jarenas.msvc.user.msvc_user.MsvcUserApplication" />
+      <module name="msvc-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jarenas.msvc.user.msvc_user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MsvcUserApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,6 +83,47 @@
       <option name="presentableId" value="Default" />
       <updated>1721923887094</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit&#10;add packages model.entity with user entity class&#10;add package dto with userDTO">
+      <option name="closed" value="true" />
+      <created>1721926813247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721926813247</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added some files">
+      <option name="closed" value="true" />
+      <created>1721926835889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721926835889</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added changes on user.&#10;created UserCreationDTO,UserDTO and UserMapper&#10;to do the correct mapper with mapStruct &#10;add UserService and UserServiceImpl to do the bussines logic and contract">
+      <option name="closed" value="true" />
+      <created>1721933246468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933246468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add package exceptions with 2 class to handler exceptions">
+      <option name="closed" value="true" />
+      <created>1721933530582</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933530582</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add package controller and UserController class with 2 GetMethods to get list and user by id">
+      <option name="closed" value="true" />
+      <created>1721935173692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721935173692</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,5 +136,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit&#10;add packages model.entity with user entity class&#10;add package dto with userDTO" />
+    <MESSAGE value="added some files" />
+    <MESSAGE value="added changes on user.&#10;created UserCreationDTO,UserDTO and UserMapper&#10;to do the correct mapper with mapStruct &#10;add UserService and UserServiceImpl to do the bussines logic and contract" />
+    <MESSAGE value="add package exceptions with 2 class to handler exceptions" />
+    <MESSAGE value="add package controller and UserController class with 2 GetMethods to get list and user by id" />
+    <option name="LAST_COMMIT_MESSAGE" value="add package controller and UserController class with 2 GetMethods to get list and user by id" />
   </component>
 </project>
