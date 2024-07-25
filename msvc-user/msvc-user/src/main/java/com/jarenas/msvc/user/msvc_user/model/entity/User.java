@@ -11,62 +11,68 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idUser;
 
-    @NotBlank(message = "Name can´t be blank or empty")
-    @Size(min = 3, max = 40, message = "Name must be between 2 and 40 characters")
     private String name;
-
-    @NotBlank(message = "Email is mandatory")
-    @Column(unique = true)
-    @Email(message = "Email should be valid")
     private String email;
-
-    @NotBlank(message = "Username is mandatory")
-    @Size(min = 3, max = 40, message = "Username must be between 2 and 40 characters")
+    private String address;
+    private String phoneNumber;
     private String username;
-
-    @NotBlank(message = "Password is mandatory")
     private String password;
 
-
-    public Long getId() {
-        return id;
+    public Long getIdUser() {
+        return idUser;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdUser(Long idUser) {
+        this.idUser = idUser;
     }
 
-    public @NotBlank String getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(@NotBlank String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public @NotBlank @Email String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(@NotBlank @Email String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public @NotBlank String getUsername() {
+    public String getAddres() {
+        return address;
+    }
+
+    public void setAddres(String addres) {
+        this.address = addres;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(@NotBlank String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
-    public @NotBlank String getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(@NotBlank String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
