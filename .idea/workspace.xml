@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="add package controller and UserController class with 2 GetMethods to get list and user by id">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="fix some atributtes on mapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/dto/UserCreationDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/dto/UserCreationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/dto/UserCreationDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721935173692</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix some atributtes on mapper">
+      <option name="closed" value="true" />
+      <created>1721937424641</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721937424641</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +149,7 @@
     <MESSAGE value="added changes on user.&#10;created UserCreationDTO,UserDTO and UserMapper&#10;to do the correct mapper with mapStruct &#10;add UserService and UserServiceImpl to do the bussines logic and contract" />
     <MESSAGE value="add package exceptions with 2 class to handler exceptions" />
     <MESSAGE value="add package controller and UserController class with 2 GetMethods to get list and user by id" />
-    <option name="LAST_COMMIT_MESSAGE" value="add package controller and UserController class with 2 GetMethods to get list and user by id" />
+    <MESSAGE value="fix some atributtes on mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some atributtes on mapper" />
   </component>
 </project>

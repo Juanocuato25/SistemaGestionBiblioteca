@@ -4,7 +4,6 @@ import com.jarenas.msvc.user.msvc_user.dto.UserCreationDTO;
 import com.jarenas.msvc.user.msvc_user.dto.UserDTO;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserService {
 
@@ -12,4 +11,6 @@ public interface UserService {
     UserDTO createUser(UserCreationDTO userCreationDTO);
     UserDTO findUserById(Long id);
     void deleteUser(Long id);
+    boolean existsByEmail(String email);
+    UserDTO updateUSer(UserCreationDTO userCreationDTO, Long id);
 }

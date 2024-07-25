@@ -32,9 +32,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public UserDTO createUser(UserCreationDTO userCreationDTO) {
-        User user = UserMapper.INSTANCE.toUser(userCreationDTO);
-        return UserMapper.INSTANCE.toUserDTO(uRepository.save(user));
+    public UserDTO createUser(UserCreationDTO userCreationDTO) {//Recibe por parametro el obj userCreationDto
+        User user = UserMapper.INSTANCE.toUser(userCreationDTO);//Aqui lo mapea de uCDto a user
+        return UserMapper.INSTANCE.toUserDTO(uRepository.save(user));//aqui lo mapea de user a userdto
     }
 
     @Override
@@ -47,11 +47,31 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public void deleteUser(Long id) {
-        Optional<User> ou = this.uRepository.findById(id);
-        if (ou.isPresent()){
-            throw new UserExceptions("User not found", HttpStatus.NOT_FOUND);
-        }
-        uRepository.deleteById(id);
+        User user = uRepository.findById(id)
+                .orElseThrow(() -> new UserExceptions("User not found", HttpStatus.NOT_FOUND));
+        uRepository.deleteById(user.getId());
+    }
+
+    @Override
+    @Transactional
+    public boolean existsByEmail(String email) {
+        return uRepository.existsByEmail(email);
+    }
+
+    @Override
+    @Transactional
+    public UserDTO updateUSer(UserCreationDTO userCreationDTO, Long id) {
+        User user = uRepository.findById(id)
+                .orElseThrow(() -> new UserExceptions("User not found", HttpStatus.NOT_FOUND));
+
+        user.setName(userCreationDTO.getName());
+        user.setUsername(userCreationDTO.getUsername());
+        user.setEmail(userCreationDTO.getEmail());
+        user.setAddress(userCreationDTO.getAddress());
+        user.setPhoneNumber(userCreationDTO.getPhoneNumber());
+        user.setPassword(userCreationDTO.getPassword());
+
+        return userMapper.toUserDTO(uRepository.save(user));
     }
 
 

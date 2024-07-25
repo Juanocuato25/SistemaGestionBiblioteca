@@ -50,7 +50,7 @@ public class UserCreationDTO {
         return address;
     }
 
-    public void setAddres(@NotBlank(message = "Addres is mandatory") String address) {
+    public void setAddress(@NotBlank(message = "Addres is mandatory") String address) {
         this.address = address;
     }
 
