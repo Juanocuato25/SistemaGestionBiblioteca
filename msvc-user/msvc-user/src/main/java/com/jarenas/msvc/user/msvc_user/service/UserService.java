@@ -10,6 +10,6 @@ public interface UserService {
 
     List<UserDTO> getAllUsers();
     UserDTO createUser(UserCreationDTO userCreationDTO);
-    Optional<UserDTO> findUserById(Long id);
+    UserDTO findUserById(Long id);
     void deleteUser(Long id);
 }

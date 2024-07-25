@@ -2,9 +2,11 @@ package com.jarenas.msvc.user.msvc_user.service;
 
 import com.jarenas.msvc.user.msvc_user.dto.UserCreationDTO;
 import com.jarenas.msvc.user.msvc_user.dto.UserDTO;
+import com.jarenas.msvc.user.msvc_user.exceptions.UserExceptions;
 import com.jarenas.msvc.user.msvc_user.mapper.UserMapper;
 import com.jarenas.msvc.user.msvc_user.model.entity.User;
 import com.jarenas.msvc.user.msvc_user.repository.UserRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -42,12 +44,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public Optional<UserDTO> findUserById(Long id) {
-        User user = uRepository.findById(id).orElse(null);
-        if (user == null){
-            return Optional.empty();
-        }
-        return Optional.of(UserMapper.INSTANCE.toUserDTO(user));
+    public UserDTO findUserById(Long id) {
+        User user = uRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("User does not exist"));
+        return UserMapper.INSTANCE.toUserDTO(user);
     }
 
     @Override
@@ -55,7 +54,7 @@ public class UserServiceImpl implements UserService {
     public void deleteUser(Long id) {
         Optional<User> ou = this.uRepository.findById(id);
         if (ou.isPresent()){
-            System.out.println("Error");
+            throw new UserExceptions("User not found", HttpStatus.NOT_FOUND);
         }
         uRepository.deleteById(id);
     }
