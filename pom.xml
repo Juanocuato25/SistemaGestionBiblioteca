@@ -18,6 +18,7 @@
 
     <modules>
         <module>msvc-user/msvc-user</module>
+        <module>msvc.book/msvc.book</module>
     </modules>
 
     <properties>

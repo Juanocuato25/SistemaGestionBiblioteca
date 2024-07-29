@@ -32,8 +32,8 @@ public class UserController {
         try {
             UserDTO userDTO = uService.findUserById(id);
             return ResponseEntity.ok(userDTO);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();
+        } catch (UserExceptions e) {
+            return ResponseEntity.status(e.getHttpStatus()).body(e.getMessage());
         }
     }
 
