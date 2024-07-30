@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="add post,put,delete endpoints into UserController UserService">
+    <list default="true" id="9a7c7787-8c13-4697-b1eb-81e89d113f7e" name="Changes" comment="add all msvc-book">
+      <change afterPath="$PROJECT_DIR$/msvc-loan/msvc-loan/src/main/java/com/jarenas/msvc_loan/exceptions/ExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/msvc-loan/msvc-loan/src/main/java/com/jarenas/msvc_loan/exceptions/LoanExceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc-user/msvc-user/src/main/java/com/jarenas/msvc/user/msvc_user/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msvc.book/msvc.book/src/main/java/com/jarenas/msvc/book/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/msvc.book/msvc.book/src/main/java/com/jarenas/msvc/book/mapper/BookMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -45,6 +46,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MsvcLoanApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.MsvcUserApplication.executor&quot;: &quot;Run&quot;,
     &quot;Maven.SistemaGestionBiblioteca [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.msvc.book [clean].executor&quot;: &quot;Run&quot;,
@@ -52,23 +54,40 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanc/OneDrive/Escritorio/Microservicios/SistemaGestionBiblioteca&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/juanc/OneDrive/Escritorio/Microservicios/SistemaGestionBiblioteca/msvc-loan/msvc-loan/src/main/java/com/jarenas/msvc_loan/exceptions&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\juanc\OneDrive\Escritorio\Microservicios\SistemaGestionBiblioteca\msvc-loan\msvc-loan\src\main\java\com\jarenas\msvc_loan\exceptions" />
+      <recent name="C:\Users\juanc\OneDrive\Escritorio\Microservicios\SistemaGestionBiblioteca\msvc-loan\msvc-loan\src\main\java\com\jarenas\msvc_loan\controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jarenas.msvc.book.exceptions" />
       <recent name="com.jarenas.msvc.user.msvc_user.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.MsvcLoanApplication">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jarenas.msvc.book.Application" />
       <module name="msvc.book" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jarenas.msvc.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsvcLoanApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jarenas.msvc_loan.MsvcLoanApplication" />
+      <module name="msvc-loan" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jarenas.msvc_loan.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MsvcLoanApplication" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.MsvcUserApplication" />
       </list>
@@ -164,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721941910040</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add all msvc-book">
+      <option name="closed" value="true" />
+      <created>1722258397614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722258397614</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +214,7 @@
     <MESSAGE value="add package controller and UserController class with 2 GetMethods to get list and user by id" />
     <MESSAGE value="fix some atributtes on mapper" />
     <MESSAGE value="add post,put,delete endpoints into UserController UserService" />
-    <option name="LAST_COMMIT_MESSAGE" value="add post,put,delete endpoints into UserController UserService" />
+    <MESSAGE value="add all msvc-book" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all msvc-book" />
   </component>
 </project>
